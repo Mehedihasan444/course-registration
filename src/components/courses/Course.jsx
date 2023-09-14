@@ -22,7 +22,7 @@ const Course = ({ handleSelection }) => {
           key={course.id}
         >
           <div className="flex justify-center items-center">
-            <img src={course.cover} alt="" />
+            <img src={course.cover} alt="" className="w-full"/>
           </div>
           <div className="px-3 space-y-3">
             <h1 className="text-xl font-semibold ">{course.title}</h1>
@@ -30,11 +30,11 @@ const Course = ({ handleSelection }) => {
             <div className="flex justify-between items-center">
               <div className="flex justify-between items-center">
                 <BiDollar></BiDollar>
-                <small className="">Price: {course.price}</small>
+                <small className=""><span className="font-semibold">Price:</span> {course.price}</small>
               </div>
               <div className="flex justify-between items-center gap-3">
                 <FiBookOpen></FiBookOpen>
-                <small className="">Credit: {course.credit}hr</small>
+                <small className=""><span className="font-semibold">Credit:</span> {course.credit}hr</small>
               </div>
             </div>
             <button

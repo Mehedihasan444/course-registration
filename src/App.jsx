@@ -19,7 +19,7 @@ function App() {
     const newCredit = Credit + credit;
     const newPrice = price + Price;
     const newRemainingHour = remainingHour - credit;
-    if (newRemainingHour <-1) {
+    if (newRemainingHour <0) {
       alert("You have reached your limit.");
       return;
     } else {
