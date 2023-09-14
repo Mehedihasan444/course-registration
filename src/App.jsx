@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-// import PropTypes from "prop-types";
+
 import "./App.css";
 import Course from "./components/courses/Course";
 import Selected_course from "./components/selected_course/Selected_course";
@@ -19,7 +19,7 @@ function App() {
     const newCredit = Credit + credit;
     const newPrice = price + Price;
     const newRemainingHour = remainingHour - credit;
-    if (newRemainingHour <= 0) {
+    if (newRemainingHour <-1) {
       alert("You have reached your limit.");
       return;
     } else {
