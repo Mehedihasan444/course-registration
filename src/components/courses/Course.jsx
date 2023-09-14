@@ -15,7 +15,7 @@ const Course = ({ handleSelection }) => {
 
   //   console.log(courses);
   return (
-    <div className="w-3/4 grid grid-cols-3 gap-5 my-10 ">
+    <div className="px-5  md:w-3/4 grid md:grid-cols-2 md:px-3 lg:grid-cols-3 gap-5 my-10 ">
       {courses.map((course) => (
         <div
           className="text-center space-y-3 shadow-lg p-5 rounded-md bg-white"
@@ -25,7 +25,7 @@ const Course = ({ handleSelection }) => {
             <img src={course.cover} alt="" />
           </div>
           <div className="px-3 space-y-3">
-            <h1 className="text-lg font-semibold ">{course.title}</h1>
+            <h1 className="text-xl font-semibold ">{course.title}</h1>
             <p className="text-xs text-justify ">{course.description}</p>
             <div className="flex justify-between items-center">
               <div className="flex justify-between items-center">

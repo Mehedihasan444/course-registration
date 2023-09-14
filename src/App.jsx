@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import "./App.css";
 import Course from "./components/courses/Course";
 import Selected_course from "./components/selected_course/Selected_course";
@@ -37,10 +37,14 @@ function App() {
       <header className="bg-[#F3F3F3] py-5">
         <h1 className="text-4xl font-bold text-center">Course Registration</h1>
       </header>
-      <div className="flex justify-center bg-[#F3F3F3]">
-        <Course handleSelection={handleSelection}></Course>
+      <div className="md:flex justify-center bg-[#F3F3F3]">
+        <Course
+          handleSelection={handleSelection}
+          className=""
+        ></Course>
         <div className="">
           <Selected_course
+            className=""
             select={select}
             Credit={Credit}
             Price={Price}

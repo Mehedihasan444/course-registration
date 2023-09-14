@@ -2,8 +2,8 @@ import PropTypes from "prop-types";
 
 const Selected_course = ({ select,Credit,Price,remainingHour }) => {
   return (
-    <div className="w-full my-10 mx-5 shadow-lg p-5 rounded-md bg-white">
-      <h1 className="text-lg font-semibold">Credit Hour Remaining {remainingHour} hr</h1>
+    <div className="lg:w-full my-10 mx-5 shadow-lg p-5 rounded-md bg-white space-y-3">
+      <h1 className="text-lg font-semibold text-purple-600">Credit Hour Remaining : {remainingHour} hr</h1>
       <hr />
       <h1 className="text-lg font-semibold">Course Name</h1>
       <div className="space-y-3">
@@ -16,7 +16,7 @@ const Selected_course = ({ select,Credit,Price,remainingHour }) => {
       <hr />
       <h3 className="text-base">Total Credit Hour : {Credit}</h3>
       <hr />
-      <h3 className="text-base font-semibold">Total Price : {Price}</h3>
+      <h3 className="text-base font-semibold">Total Price : {Price} USD</h3>
     </div>
   );
 };
