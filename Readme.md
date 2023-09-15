@@ -1,11 +1,17 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Live link : https://course-registration-mehedihasan444.surge.sh/
 
-Currently, two official plugins are available:
+# Questions
+-Add at least 3 Project features
+Answer: These are three project features :
+        1. When your credit limit reached greater than 20 then a toast will be pop up.
+        2. If you clicked one course which is already selected then a toast will be pop up.
+        3. If your remaining credit hour is less than zero then a toast will be pop up.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-Discuss how you managed the state in your assignment project.
+Answer: For this assignment project I need to store title, price and credit of each course on specific action, to store these things I am declaring three state and store data based on their type.
 
 
-Live link : https://course-registration-mehedihasan444.surge.sh/
+
+
+

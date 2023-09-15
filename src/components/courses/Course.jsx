@@ -3,7 +3,6 @@ import { useState } from "react";
 import { FiBookOpen } from "react-icons/fi";
 import { BiDollar } from "react-icons/bi";
 import PropTypes from "prop-types";
-import { ToastContainer } from "react-toastify";
 const Course = ({ handleSelection }) => {
   const [courses, setCourses] = useState([]);
 
