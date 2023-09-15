@@ -2,7 +2,8 @@
 # Live link : https://course-registration-mehedihasan444.surge.sh/
 
 # Questions
-- Add at least 3 Project features
+- Add at least 3 Project features  
+
 Answer: These are three project features :   
 
         1. When your credit limit reached greater than 20 then a toast will be pop up.  
@@ -13,7 +14,7 @@ Answer: These are three project features :
 
 
 - Discuss how you managed the state in your assignment project.  
-  
+
 Answer: For this assignment project I need to store title, price and credit of each course on specific action, to store these things I am declaring three state and store data based on their type.
 
 
