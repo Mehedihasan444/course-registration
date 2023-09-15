@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
 
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import "./App.css";
 import Course from "./components/courses/Course";
 import Selected_course from "./components/selected_course/Selected_course";
@@ -12,15 +14,35 @@ function App() {
   const handleSelection = (title, credit, price) => {
     const isExist = select.find((element) => element === title);
     if (isExist) {
-      alert("You have already selected this course.");
+     
+    toast.warn('You have already selected this course.', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      });
       return;
     }
     const newSelect = [...select, title];
     const newCredit = Credit + credit;
     const newPrice = price + Price;
     const newRemainingHour = remainingHour - credit;
-    if (newRemainingHour <0) {
-      alert("You have reached your limit.");
+    if (newRemainingHour < 0) {
+      
+      toast.warn('You have reached your limit.', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
       return;
     } else {
       setCredit(newCredit);
@@ -34,14 +56,13 @@ function App() {
 
   return (
     <>
+     
+        <ToastContainer/>
       <header className="bg-[#F3F3F3] py-5">
         <h1 className="text-4xl font-bold text-center">Course Registration</h1>
       </header>
       <div className="md:flex justify-center bg-[#F3F3F3]">
-        <Course
-          handleSelection={handleSelection}
-          className=""
-        ></Course>
+        <Course handleSelection={handleSelection} className=""></Course>
         <div className="">
           <Selected_course
             className=""

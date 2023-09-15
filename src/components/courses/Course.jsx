@@ -3,8 +3,8 @@ import { useState } from "react";
 import { FiBookOpen } from "react-icons/fi";
 import { BiDollar } from "react-icons/bi";
 import PropTypes from "prop-types";
+import { ToastContainer } from "react-toastify";
 const Course = ({ handleSelection }) => {
-
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const Course = ({ handleSelection }) => {
           key={course.id}
         >
           <div className="flex justify-center items-center">
-            <img src={course.cover} alt="" className="w-full"/>
+            <img src={course.cover} alt="" className="w-full" />
           </div>
           <div className="px-3 space-y-3">
             <h1 className="text-xl font-semibold ">{course.title}</h1>
@@ -30,22 +30,30 @@ const Course = ({ handleSelection }) => {
             <div className="flex justify-between items-center">
               <div className="flex justify-between items-center">
                 <BiDollar></BiDollar>
-                <small className=""><span className="font-semibold">Price:</span> {course.price}</small>
+                <small className="">
+                  <span className="font-semibold">Price:</span> {course.price}
+                </small>
               </div>
               <div className="flex justify-between items-center gap-3">
                 <FiBookOpen></FiBookOpen>
-                <small className=""><span className="font-semibold">Credit:</span> {course.credit}hr</small>
+                <small className="">
+                  <span className="font-semibold">Credit:</span> {course.credit}
+                  hr
+                </small>
               </div>
             </div>
             <button
               className="btn btn-primary w-full text-base font-semibold"
-              onClick={() => handleSelection(course.title,course.credit,course.price)}
+              onClick={() =>
+                handleSelection(course.title, course.credit, course.price)
+              }
             >
               Select
             </button>
           </div>
         </div>
       ))}
+      
     </div>
   );
 };
