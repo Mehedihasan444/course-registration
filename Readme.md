@@ -15,7 +15,7 @@ Answer: These are three project features :
 
 - Discuss how you managed the state in your assignment project.  
 
-Answer: For this assignment project I need to store title, price and credit of each course on specific action, to store these things I am declaring three state and store data based on their type.
+Answer: For this assignment project I need to store title, price and credit of each course on specific action, to store these things I am declaring three state and store data based on their type. I used this data as per needs.
 
 
 
